@@ -88,8 +88,56 @@
 		{
 			"name": "put responses",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "full_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email_address",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "programming_stack",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "certificates",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/questions/responses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"questions",
+						"responses"
+					]
+				}
 			},
 			"response": []
 		},
@@ -111,6 +159,121 @@
 						"responses",
 						"certificates",
 						"1699191141836Curriculum Vitae.pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deployed get questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://survey-app-92kq.onrender.com/api/questions",
+					"protocol": "https",
+					"host": [
+						"survey-app-92kq",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deployed put request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "full_name",
+							"value": "Meru Davis Njoroge",
+							"type": "text"
+						},
+						{
+							"key": "email_address",
+							"value": "davismeru911@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "I am a full stack developer",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "programming_stack",
+							"value": "MySql, React Js, Node Js",
+							"type": "text"
+						},
+						{
+							"key": "certificates",
+							"type": "file",
+							"src": [
+								"/E:/docs/cover letter.pdf",
+								"/E:/docs/Curriculum Vitae.pdf"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "https://survey-app-92kq.onrender.com/api/questions/responses?",
+					"protocol": "https",
+					"host": [
+						"survey-app-92kq",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"questions",
+						"responses"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deployed get responses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://survey-app-92kq.onrender.com/api/questions/responses?page=0",
+					"protocol": "https",
+					"host": [
+						"survey-app-92kq",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"questions",
+						"responses"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						}
 					]
 				}
 			},
